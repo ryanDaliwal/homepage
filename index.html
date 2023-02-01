@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>user@home &gt; newtab</title>
+    <style>
+        html {
+            align-items: center;
+            background-color: #44475a;
+            color: #f8f8f2;
+            display: flex;
+            font: 22px/1 monospace;
+            height: 100%;
+            justify-content: center;
+        }
+        
+        body {
+            background-color: #282a36;
+            border-radius: 2px;
+            box-shadow: 1px 1px 6px #1d1f2187;
+            border-width: thin;
+            border-style: solid;
+            border-color: #bd93f9;
+            color: #f8f8f2;
+            display: flex;
+            flex-direction: column;
+            min-height: 30ch;
+            min-width: 50vw;
+            padding: 2em;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        p span {
+            color: #50fa7b;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:focus,
+        a:hover {
+            font-weight: bold;
+        }
+
+        ul  {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            column-gap: 2em;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 1em 0;
+        }
+
+        ul:nth-child(5n+1) li:first-child {
+            color: #ff79c6;
+        }
+
+        ul:nth-child(5n + 2) li:first-child {
+        color: #ffb86c;
+        }
+
+        ul:nth-child(5n + 3) li:first-child {
+        color: #8be9fd;
+        }
+
+        ul:nth-child(5n + 4) li:first-child {
+        color: #ff5555;
+        }
+
+        ul:nth-child(5n + 5) li:first-child {
+        color: #f1fa8c;
+        }
+
+        li:first-child {
+            font-weight: bold;
+        }
+
+        li:last-child {
+            margin: 0 0 1em;
+        }
+
+        p #cursor {
+            display: inline;
+            color: #f8f8f2;
+            background-color: #44475a;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0% {opacity: 0;}
+            49% {opacity: 0;}
+            50% {opacity: 1;}
+
+        }
+
+        .row {
+            display: inline-flex;
+            color: #50fa7b;
+        }
+
+        .search-bar input{
+            background: transparent;
+            color: #f8f8f2;
+            font-size: 22px;
+            font-family: monospace;
+            border: 0px;
+            outline: none;
+        }
+
+        .search-bar ::placeholder {
+            color: #f8f8f2
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <p><span>dali@firefox &gt; </span>newtab</p>
+
+    <nav>
+        <ul>
+            <li>general</li>
+            <li><a href="https://mail.google.com/mail/u/0/">gmail</a></li>
+            <li><a href="https://outlook.live.com/mail/0/">outlook</a></li>
+            <li><a href="https://calendar.google.com/calendar/u/0/">calendar</a></li>
+        </ul>
+
+        <ul>
+            <li>uni</li>
+            <li><a href="https://www.youtube.com/">hum_can</a></li>
+            <li><a href="https://cti-courses.instructure.com/">cti_can</a></li>
+            <li><a href="https://cas.humboldt.edu/">humboldt</a></li>
+        </ul>
+        
+        <ul>
+            <li>media</li>
+            <li><a href="https://www.youtube.com/">youtube</a></li>
+            <li><a href="https://www.patreon.com/home">patreon</a></li>
+            <li><a href="https://www.reddit.com/">reddit</a></li>
+        </ul>
+
+        <ul>
+            <li>misc</li>
+            <li><a href="https://www.notion.so/">notion</a></li>
+            <li><a href="https://www.netflix.com/">netflix</a></li>
+            <li><a href="https://www.amazon.com/">amazon</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="row">
+
+        <span>dali@google &gt;&nbsp; </span>
+
+        <form action="https://google.com/search" class="search-bar" method="GET">
+            <input autofocus
+                   name="q"
+                   type="search"
+                   placeholder="">
+        </form>
+ 
+    </div>
+
+
+
+</html>
